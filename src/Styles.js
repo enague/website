@@ -13,7 +13,7 @@ const General = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 60px 40px 60px 40px;
 `;
 
 export default General;

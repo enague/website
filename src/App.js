@@ -13,6 +13,11 @@ import Footer from "./Footer.js"
 const NavBar = styled.div`
     background: black;
     font-style: Arial;
+
+    nav {
+      background-color: black;
+      color: black
+    }
 `
 const StyledLink = styled(Link)`
     text-decoration: none;
@@ -55,9 +60,9 @@ const App = () => (
   <Router>
     <div>
         <NavBar>
-          <nav className="navbar navbar-expand-lg">
+          <nav className="navbar navbar-expand-sm fixed-top navbar-custom">
             <button className="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <i className="fas fa-bars"></i>
+              <i className="fas fa-bars" style={{color: 'black'}}></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarText">
                 <div className="navbar-brand">
