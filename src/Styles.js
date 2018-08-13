@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-const background = require('/Users/eric/Desktop/portfolio/src/cool-background.png')
+const background = require('/Users/eric/Desktop/portfolio/src/images/cool-background.png')
 
 
 const General = styled.div`
@@ -10,10 +10,10 @@ const General = styled.div`
     background-size: cover;
     font-style: Arial;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 100px;
+    padding: 75px;
 `;
 
 export default General;
