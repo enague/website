@@ -7,12 +7,22 @@ const FOMO = require('/Users/eric/Desktop/portfolio/src/images/FOMO.jpg')
 const RUinn = require('/Users/eric/Desktop/portfolio/src/images/RUinn.png')
 
 const Header = styled.h1`
-  position: relative;
-  left: 100px;
-  -webkit-animation: mymove 3s;
-  animation: mymove 3s;
-  animation-timing-function: ease;
-  margin-bottom: 50px;
+    /* Safari 4.0 - 8.0 */
+    // @-webkit-keyframes mymove {
+    //     from {left: -150px;}
+    //     to {float: center;}
+    // }
+
+    // @keyframes mymove {
+    //     from {left: -150px;}
+    //     to {float: center}
+    // }
+
+    position: relative;
+    float: center;
+    -webkit-animation: mymove 3s;
+    animation: mymove 3s;
+    animation-timing-function: ease;
 `
 
 const Projects = () => (

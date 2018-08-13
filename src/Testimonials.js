@@ -4,31 +4,44 @@ import styled from 'styled-components';
 
 
 const Header = styled.h1`
-  position: relative;
-  left: 100px;
-  -webkit-animation: mymove 3s;
-  animation: mymove 3s;
-  animation-timing-function: ease;
-  margin-bottom: 50px;
+    /* Safari 4.0 - 8.0 */
+    // @-webkit-keyframes mymove {
+    //     from {left: -150px;}
+    //     to {float: center;}
+    // }
+
+    // @keyframes mymove {
+    //     from {left: -150px;}
+    //     to {float: center}
+    // }
+
+    position: relative;
+    float: center;
+    -webkit-animation: mymove 3s;
+    animation: mymove 3s;
+    animation-timing-function: ease;
 `
+
 const User = styled.div`
 
   /* Safari 4.0 - 8.0 */
   @-webkit-keyframes user {
-      50% {border-radius: 50px;}
+      0% {border-radius: 50px;}
+      100% {border-radius: 50%}
   }
 
   @keyframes user {
-      50% {border-radius: 50px;}
+      0% {border-radius: 50px;}
+      100% {border-radius: 50%}
   }
 
     border-radius: 50%;
     background: white;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin: auto;
-    -webkit-animation: user 7s infinite; /* Safari 4.0 - 8.0 */
-    animation: user 7s infinite;
+    -webkit-animation: user 4s; /* Safari 4.0 - 8.0 */
+    animation: user 4s;
 `
 
 const Quote = styled.span`

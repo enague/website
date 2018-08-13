@@ -5,19 +5,8 @@ import styled from 'styled-components';
 const profile = require('/Users/eric/Desktop/portfolio/src/images/profile.jpg')
 
 const Header = styled.h1`
-    /* Safari 4.0 - 8.0 */
-    @-webkit-keyframes mymove {
-        from {left: -150px;}
-        to {left: 100px;}
-    }
-
-    @keyframes mymove {
-        from {left: -150px;}
-        to {left: 100px;}
-    }
-
     position: relative;
-    left: 100px;
+    float: center;
     -webkit-animation: mymove 3s;
     animation: mymove 3s;
     animation-timing-function: ease;
@@ -26,6 +15,14 @@ const Header = styled.h1`
 const Job = styled.h1`
     color: white;
     font-size: 50px;
+
+    @media (max-width: 300px) {
+        font-size: 15px;
+    }
+    
+    @media (max-width: 700px) {
+        font-size: 30px;
+    }
 `
 
 
@@ -67,16 +64,14 @@ const Adj = styled.div.attrs({
 
 const Home = () => (
     <General>
-        <div>
-            <Header> &lceil;  Hello World, I'm Eric  &rfloor;</Header>
-            <img  src={profile} alt="profile" style={{height: '500px', width: '500px', boxShadow: '5px 5px 5px black', marginLeft: '40px'}}/>
-            <div class="row">
-                <Adj>Passionate</Adj>
-                <Adj>Reliable</Adj>
-                <Adj>Driven</Adj>
-            </div>
-            <Job>Full-Stack Software Engineer</Job>
+        <Header> &lceil;  Hello World, I'm Eric  &rfloor;</Header>
+        <img  src={profile} alt="profile" style={{height: 'auto', width: '100%', maxWidth: '500px', boxShadow: '5px 5px 5px black'}}/>
+        <div className="row">
+            <Adj>Passionate</Adj>
+            <Adj>Reliable</Adj>
+            <Adj>Driven</Adj>
         </div>
+        <Job>Full-Stack Software Engineer</Job>
     </General>
   );
 
