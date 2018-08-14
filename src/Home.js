@@ -64,6 +64,7 @@ const Adj = styled.div.attrs({
         transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
         perspective: 1000px;
+        color: white;
     }
 
     @media (max-width: 700px) {

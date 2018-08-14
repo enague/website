@@ -34,8 +34,8 @@ const Projects = () => (
             &#126; Customized Bootstrap styling with React Components to make a more cohesive front-end view <br />
             &#126; Integrated Eventbrite API using Express and Node.js to render updated events <br />
         </p>
-        <button className='btn btn-success' style={{width: '100%', marginBottom: '5px'}} onClick={() => {window.location = 'https://github.com/enague/Fomo'}}> <i className="fab fa-github fa-2x"></i></button>
-        <button className='btn btn-danger' style={{width: '100%'}} onClick={() => {window.location = 'https://youtu.be/VmNPACZ99Rc'}}> <i className="fab fa-youtube fa-2x"></i></button>
+        <button className='btn btn-success' style={{width: '100%', marginBottom: '5px'}} onClick={() => {window.open('https://github.com/enague/Fomo')}}> <i className="fab fa-github fa-2x"></i></button>
+        <button className='btn btn-danger' style={{width: '100%'}} onClick={() => {window.open('https://youtu.be/VmNPACZ99Rc')}}> <i className="fab fa-youtube fa-2x"></i></button>
         </div>
         </div>
       </div>
@@ -49,8 +49,8 @@ const Projects = () => (
           &#126; Executed parameterized search using Node and Express to efficiently query database <br />
           &#126; Deployed microservice with Docker on AWS(EC2) ​to integrate multiple microservices on a proxy server <br />
         </p>
-        <button className='btn btn-success' style={{width: '100%', marginBottom: '5px'}} onClick={() => {window.location = 'https://github.com/ruinn/Header'}}> <i className="fab fa-github fa-2x"></i></button>
-        <button className='btn btn-danger' style={{width: '100%'}} onClick={() => {window.location = 'https://youtu.be/i32lUbn4gXc'}}> <i className="fab fa-youtube fa-2x"></i></button>
+        <button className='btn btn-success' style={{width: '100%', marginBottom: '5px'}} onClick={() => {window.open('https://github.com/ruinn/Header')}}> <i className="fab fa-github fa-2x"></i></button>
+        <button className='btn btn-danger' style={{width: '100%'}} onClick={() => {window.open('https://youtu.be/i32lUbn4gXc')}}> <i className="fab fa-youtube fa-2x"></i></button>
         </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ const Projects = () => (
           &#126; Stress tested maximum RPS and minimum latency using Loader.io to identify efficiency in production scale <br />
           &#126; Optimized PostgreSQL database to query over 10 million records in under 2ms <br />
         </p>
-        <button className='btn btn-success' style={{width: '100%'}} onClick={() => {window.location = 'https://github.com/enague/listing-description-module'}}> <i className="fab fa-github fa-2x"></i></button>
+        <button className='btn btn-success' style={{width: '100%'}} onClick={() => {window.open('https://github.com/enague/listing-description-module')}}> <i className="fab fa-github fa-2x"></i></button>
         </div>
         </div>
       </div>

@@ -79,10 +79,10 @@ const App = () => (
                 </div>
             </div>
             <div className="navbar-nav ml-auto" style={{display: 'flex', flexDirection: 'row'}}>
-                <Linkedin onClick={() => {window.location = 'https://www.linkedin.com/in/eric-nague-523b117b/'}}><i className="fab fa-linkedin fa-2x"></i></Linkedin>
-                <Twitter onClick={() => {window.location = 'https://twitter.com/NagueEric?lang=en'}}><i className="fab fa-twitter-square fa-2x"></i></Twitter>
-                <Github onClick={() => {window.location = 'https://github.com/enague'}}><i className="fab fa-github-square fa-2x"></i></Github>
-                <Resume onClick={()=> {window.location = 'https://docs.google.com/viewerng/viewer?url=https://s3.us-east-2.amazonaws.com/portfolio-ericnague/Eric+Nague+Resume.pdf'}}> <i className="far fa-file-alt fa-2x"></i></Resume>
+                <Linkedin onClick={() => {window.open('https://www.linkedin.com/in/eric-nague-523b117b/')}}><i className="fab fa-linkedin fa-2x"></i></Linkedin>
+                <Twitter onClick={() => {window.open('https://twitter.com/NagueEric?lang=en')}}><i className="fab fa-twitter-square fa-2x"></i></Twitter>
+                <Github onClick={() => {window.open('https://github.com/enague')}}><i className="fab fa-github-square fa-2x"></i></Github>
+                <Resume onClick={()=> {window.open('https://docs.google.com/viewerng/viewer?url=https://s3.us-east-2.amazonaws.com/portfolio-ericnague/Eric+Nague+Resume.pdf')}}> <i className="far fa-file-alt fa-2x"></i></Resume>
             </div>
           </nav>
           <div style={{background:'#4A0F6E', height: '30px'}}></div>

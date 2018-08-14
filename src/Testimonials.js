@@ -2,8 +2,8 @@ import React from 'react';
 import General from './Styles.js';
 import styled from 'styled-components';
 
-const profile = require('/Users/eric/Desktop/portfolio/src/images/profile.jpg')
-
+const kianna = require('/Users/eric/Desktop/portfolio/src/images/kianna.jpg')
+const fred = require('/Users/eric/Desktop/portfolio/src/images/fred.jpeg')
 
 const Header = styled.h1`
     position: relative;
@@ -18,7 +18,7 @@ const Header = styled.h1`
     }
 `
 const Userbox = styled.div.attrs({
-    className: 'col-sm'
+    className: 'col-sm-6'
 })`
     display: flex;
     justify-content: center;
@@ -48,9 +48,16 @@ const User = styled.img`
 const Quote = styled.span`
   font-weight: bold;
   font-size: 30px;
+  color: black;
+  padding: 3px;
 `
 const Testimonial = styled.div`
   color: white;
+`
+
+const Jobdescription = styled.span`
+  font-size: 20px;
+  font-weight: bold;
 `
 
 const Testimonials = () => (
@@ -59,30 +66,32 @@ const Testimonials = () => (
       <div style={{display: 'flex', flexDirection: 'column', padding: '20px'}}>
         <div className='row'>
           <Userbox>
-            <User src={profile}></User>
+            <User src={kianna}></User>
           </Userbox>
-          <div className='col-sm'>
-            <Quote> <i className="fas fa-quote-left"></i></Quote>
+          <div className='col-sm-3'>
               <Testimonial> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tellus ut nunc pharetra molestie. Nulla vehicula enim volutpat eleifend consectetur. Donec at lobortis magna. Nullam eleifend lacinia turpis non facilisis. Sed non erat massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin consequat ullamcorper lectus, eu mattis mauris dictum non. Phasellus maximus dignissim libero, eget fringilla urna dictum sit amet. Etiam tempor auctor arcu, ut dignissim velit commodo sit amet. In at convallis urna, a vestibulum ex. Sed diam ipsum, tristique sed placerat vel, consequat at eros. Pellentesque mollis pellentesque risus, in ornare dui porttitor id. 
+                <Quote> <i className="fas fa-quote-left fa-xs"></i></Quote>
+                  Eric is amazing software engineer. I have worked with him for a while now and he has an great work ethic. He strives to create the best applications and has a keen eye for detail. I would recommend Eric for any web development project you plan on doing!
+                  <Quote> <i className="fas fa-quote-right fa-xs"></i> </Quote>
               </Testimonial>
-            <Quote> <i className="fas fa-quote-right"></i> </Quote> <br /> <br />
-            <button className='btn btn-light'>@username</button>
+            <br /><Jobdescription> Freelance Full-Stack Engineer </Jobdescription> <br />
+            <button className='btn btn-light' onClick={() => {window.open('https://kiannaquach.com')}}>@kiannaquach</button>
           </div>
         </div>
       </div>
       <div style={{display: 'flex', flexDirection: 'column', padding: '20px'}}>
         <div className='row'>
           <Userbox>
-            <User src={profile}></User>
+            <User src={fred}></User>
           </Userbox>
-          <div className='col-sm'>
-            <Quote> <i className="fas fa-quote-left"></i></Quote> 
-              <Testimonial>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a tellus ut nunc pharetra molestie. Nulla vehicula enim volutpat eleifend consectetur. Donec at lobortis magna. Nullam eleifend lacinia turpis non facilisis. Sed non erat massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin consequat ullamcorper lectus, eu mattis mauris dictum non. Phasellus maximus dignissim libero, eget fringilla urna dictum sit amet. Etiam tempor auctor arcu, ut dignissim velit commodo sit amet. In at convallis urna, a vestibulum ex. Sed diam ipsum, tristique sed placerat vel, consequat at eros. Pellentesque mollis pellentesque risus, in ornare dui porttitor id.  
+          <div className='col-sm-3'>
+          <Testimonial> 
+                <Quote> <i className="fas fa-quote-left fa-xs"></i></Quote>
+                  Eric is amazing software engineer. I have worked with him for a while now and he has an great work ethic. He strives to create the best applications and has a keen eye for detail. I would recommend Eric for any web development project you plan on doing!
+                  <Quote> <i className="fas fa-quote-right fa-xs"></i> </Quote>
               </Testimonial>
-            <Quote> <i className="fas fa-quote-right"></i> </Quote> <br /> <br />
-            <button className='btn btn-light'>@username</button>
+            <br /> <Jobdescription> Visual Designer @ Google</Jobdescription> <br />
+            <button className='btn btn-light' onClick={() => {window.open('https://www.freddierickjohn.com/')}}>@freddierickjohn</button>
           </div>
         </div>
       </div>

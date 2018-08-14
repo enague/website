@@ -78,15 +78,15 @@ const Footer = () => (
                         <Column>
                             <h4>Connect With Me!</h4>
                             <Row>
-                                <Linkedin onClick={() => {window.location = 'https://www.linkedin.com/in/eric-nague-523b117b/'}}><i className="fab fa-linkedin fa-2x"></i></Linkedin>
-                                <Twitter onClick={() => {window.location = 'https://twitter.com/NagueEric?lang=en'}}><i className="fab fa-twitter-square fa-2x"></i></Twitter>
-                                <Github onClick={() => {window.location = 'https://github.com/enague'}}><i className="fab fa-github-square fa-2x"></i></Github>
+                                <Linkedin onClick={() => {window.open('https://www.linkedin.com/in/eric-nague-523b117b/')}}><i className="fab fa-linkedin fa-2x"></i></Linkedin>
+                                <Twitter onClick={() => {window.open('https://twitter.com/NagueEric?lang=en')}}><i className="fab fa-twitter-square fa-2x"></i></Twitter>
+                                <Github onClick={() => {window.open('https://github.com/enague')}}><i className="fab fa-github-square fa-2x"></i></Github>
                             </Row>
                         </Column>
                     </div>
                     <div className="col-sm">
                         <Column>
-                            <button className="btn btn-success" onClick={()=> {window.location = 'https://docs.google.com/viewerng/viewer?url=https://s3.us-east-2.amazonaws.com/portfolio-ericnague/Eric+Nague+Resume.pdf'}}>Download Resume</button>
+                            <button className="btn btn-success" onClick={()=> {window.open('https://docs.google.com/viewerng/viewer?url=https://s3.us-east-2.amazonaws.com/portfolio-ericnague/Eric+Nague+Resume.pdf')}}>Download Resume</button>
                         </Column>
                     </div>
                 </Row>
