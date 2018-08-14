@@ -14,6 +14,10 @@ const General = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 60px 40px 60px 40px;
+
+    @media (max-width: 700px) {
+        padding: 150px 15px 60px 15px;
+    }
 `;
 
 export default General;

@@ -7,21 +7,26 @@ const profile = require('/Users/eric/Desktop/portfolio/src/images/profile.jpg')
 const Header = styled.h1`
     position: relative;
     float: center;
-    -webkit-animation: mymove 3s;
-    animation: mymove 3s;
-    animation-timing-function: ease;
+
+    @media (max-width: 700px) {
+        font-size: 30px
+    }
+
+    @media (max-width:300px) {
+        font-size: 15px;
+    }
 `
 
 const Job = styled.h1`
     color: white;
     font-size: 50px;
 
-    @media (max-width: 300px) {
-        font-size: 15px;
-    }
-    
     @media (max-width: 700px) {
         font-size: 30px;
+    }
+
+    @media (max-width:330px) {
+        font-size: 15px;
     }
 `
 
@@ -59,6 +64,10 @@ const Adj = styled.div.attrs({
         transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
         perspective: 1000px;
+    }
+
+    @media (max-width: 700px) {
+        font-size: 20px
     }
 `
 

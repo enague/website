@@ -37,22 +37,16 @@ const List = styled.li`
 `
 
 const Header = styled.h1`
-    /* Safari 4.0 - 8.0 */
-    // @-webkit-keyframes mymove {
-    //     from {left: -150px;}
-    //     to {float: center;}
-    // }
-
-    // @keyframes mymove {
-    //     from {left: -150px;}
-    //     to {float: center}
-    // }
-
     position: relative;
     float: center;
-    -webkit-animation: mymove 3s;
-    animation: mymove 3s;
-    animation-timing-function: ease;
+
+    @media (max-width: 700px) {
+      font-size: 30px;
+    }
+
+    @media (max-width:300px) {
+      font-size: 20px;
+    }
 `
 
 const Skill = styled.button.attrs({
