@@ -25,8 +25,8 @@ const Job = styled.h1`
         font-size: 30px;
     }
 
-    @media (max-width:330px) {
-        font-size: 15px;
+    @media (max-width:390px) {
+        font-size: 18px;
     }
 `
 

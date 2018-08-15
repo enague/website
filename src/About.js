@@ -87,17 +87,17 @@ const About = () => (
             <img src={about} alt="about" style={{height: 'auto', width: '100%', maxWidth: '400px', borderRadius: '50%', margin: 'auto'}}/>
           </div>
           <Textbox className="col-sm-8">
-            <Text> I first got into coding when I was in middle school trying to code the best myspace profile that would play my favorite song at the time and include a great design. When I was in college, I was a Webmaster for a Filipino health organization I was a part of. I had to manage the website and make sure the information flowed from our website to our club members and vice versa. After college, I did more self studying in code learning more about full-stack development using Javascript.</Text> <br /> 
+            <Text> I first got into coding when I was in middle school trying to code the best Myspace profile with a great design and cool features. When I was in college, I was a Webmaster for a Filipino health organization. I managed the website and made sure the information flowed from our website to our club members and vice versa. After college, I did more self-studying in code, learning more about full-stack development using Javascript.</Text> <br /> 
 	          <Text> As an engineer, I am always thinking about how I can improve the user experience, whether it be how fast a page loads on the back end or how the UI works and looks on the front end.  I recently worked on a personal MVP of mine called FOMO, which is an event app made in React, Node, Express, and MongoDB. In this project, I liked the challenge of being creative on how to manage state as well as how to modularize my components. 
 	          Ultimately, I value user experience and working to make a good product even better, and I would like to work with a company who values that as well. </Text>
           </Textbox>
           <Mobiletext>
               <h2>Personal</h2>
               <ul>
-                  <List>Started interest in coding during MySpace days </List>
+                  <List>Started interest in coding during MySpace days implementing changes to profile </List>
                   <List> Became Webmaster of Filipino Health Organization at UC Davis</List>
                   <List>Self-studied code from college to present </List>
-                  <List>Value making beautiful,user-centric UI's </List>
+                  <List>Values making beautiful, responsive, user-centric UI's </List>
                   <List>When I am not coding, I dance hip-hop on my team Project M in San Francisco </List>
               </ul>
           </Mobiletext>
