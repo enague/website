@@ -95,7 +95,7 @@ const Testimonials = () => (
                   <Quote> <i className="fas fa-quote-right fa-xs"></i> </Quote>
               </Testimonial>
             <br /> <Jobdescription> Visual Designer @ Google</Jobdescription> <br />
-            <button className='btn btn-light' onClick={() => {window.open('https://www.freddierickjohn.com/')}}>@freddierickjohn</button>
+            <button className='btn btn-light' onClick={() => {window.open('https://www.linkedin.com/in/freddierickjohn/')}}>@freddierickjohn</button>
           </div>
         </div>
       </div>
